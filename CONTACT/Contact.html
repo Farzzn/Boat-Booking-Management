@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Nit Patna Boat Booking: Contact Us</title>
+    <link href='https://fonts.googleapis.com/css?family=Raleway:400,200,600,800,700,500,300,100,900' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Arimo:400,700,700italic' rel='stylesheet' type='text/css'>
+    <link href="assets/css/bootstrap.min.css" rel='stylesheet' type='text/css' />
+    <link href="assets/css/style.css" rel="stylesheet" type="text/css" media="all" />
+    <link rel="icon" href="assets/images/a.png" type="image/gif" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+    <!------ Light Box ------>
+    <link rel="stylesheet" href="assets/css/swipebox.css">
+    <script src="assets/js/jquery.swipebox.min.js"></script>
+    <script type="text/javascript">
+        jQuery(function($) {
+            $(".swipebox").swipebox();
+        });
+    </script>
+    <!------ Eng Light Box ------>
+</head>
+
+<body>
+    <!--topheader starts-->
+    <div class="strip">
+        <div class="top-menu">
+            <span class="menu"> </span>
+            <ul>
+                <li class="active" id="home"><a href="../HOME/Home.html">Home</a></li>
+                <li id="aboutus"><a href="../ABOUT/About.html">About Us</a></li>
+                <li id="services"><a href="../BOOK/Service.html">Book Your Boat</a></li>
+                <li id="contact"><a href="Contact.html">Contact</a></li>
+                <div class="clearfix"></div>
+            </ul>
+        </div>
+        <!----- script-for-nav ---->
+        <script>
+            $("span.menu").click(function() {
+                $(".top-menu ul").slideToggle("slow", function() {
+                    // Animation complete.
+                });
+            });
+        </script>
+        <!----- script-for-nav ---->
+    </div>
+    <!--topheader ends--><br>
+    <div class="contact-form">
+        <div class="container">
+            <h2>Contact Us / Feedback</h2>
+            <div class="col-md-6 contact2">
+                <form action="http://www.varanasiboatbooking.com/Contact/saveMessage" id="contactFrm" name="contactFrm" method="post" accept-charset="utf-8">
+                    <input type="text" name="senderName" class="text" value="" placeholder="Enter Your Name">
+                    <input type="text" name="subject" class="text" value="" placeholder="Enter Your Subject">
+                    <input type="email" name="senderEmail" class="text" value="" placeholder="Enter Your Email">
+                    <input type="text" name="senderMobile" class="text" value="" placeholder="Enter Your Contact No." onkeypress="return event.charCode >= 48 && event.charCode <= 57" maxlength="10">
+                    <textarea name="senderMessage" placeholder="Enter Your Message (Not More Than 500 Characters)"></textarea>
+                    <input id="submitBtn" type="submit" value="Send">
+                </form>
+            </div>
+            <div class="col-md-6 details">
+                <div class="company_address">
+                    <h3 class="style">Contact Person & Info ::</h3>
+                    <p>ABHISHEK KUMAR (2006176)</p>
+                    <p>ABHISHEK KUMAR (2006177)</p>
+                    <p>VISHAL KUMAR (2006169)</p>
+                    <p>CHIRAG KUMAR (2006168)</p>
+                    <p>AMRITA KUMARI (2006182)</p>
+                    <p>FARAHN (2006170)</p>
+
+                    <p></p>
+                    <p>Office Address: NIT PATNA ( CSE NANO BUILDING) </p>
+                    <p>Whatsapp: <img src="assets/images/wp.png" width="5%">+91-8434491093 </p>
+                    <p>Mobile:+91-9999888822,+91-888899922</p>
+                    <p>Email: <a href="mailto:abhikharagpur@gmail.com">abhikharagpur@gmail.com</a>,<a href="mailto:abhishekk3.ug20.cse@nitp.ac.in">abhishekk3.ug20.cse@nitp.ac.in</a></p>
+                    <p>Follow on: <a href="https://www.instagram.com/" target="_blank">Instagram</a>,<a href="https://www.facebook.com/" target="_blank">Facebook</a>,<a href="https://www.youtube.com/"
+                            target="_blank">YouTube</a></p>
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+    <!---->
+
+    
+    <!--Footer Starts-->
+    <div class="fotter">
+         <p class="copy-right">Designed & Developed By <a href="https://www.nitp.ac.in/" target="_blank">NIT PATNA</a></p>
+    </div>
+    <!--Footer Ends-->
+
+    <script>
+        $(document).ready(function() {
+            document.getElementById("home").classList.remove("active");
+            document.getElementById("contact").classList.add("active");
+            document.getElementById("aboutus").classList.remove("active");
+            document.getElementById("services").classList.remove("active");
+        });
+    </script>
+</body>
+
+</html>
